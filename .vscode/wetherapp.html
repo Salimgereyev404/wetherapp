@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="wetherapp.css" />
+  <title>Login</title>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Тіркелу формасы -->
+    <div class="form-container" id="signup-form">
+      <form id="signupForm">
+        <h1>Create Account</h1>
+        <input type="text" id="signupPhone" placeholder="Phone Number" pattern="[0-9]{0,11}" required />
+        <input type="email" id="signupEmail" placeholder="Email" required />
+        <input type="password" id="signupPassword" placeholder="Password" required />
+        <input type="password" id="signupConfirm" placeholder="Confirm Password" required />
+        <div class="toggle-buttons">
+          <button type="button" onclick="showForm('signin')">Sign In</button>
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Кіру формасы -->
+    <div class="form-container" id="signin-form" style="display: none;">
+      <form id="signinForm">
+        <h1>Sign In</h1>
+        <input type="email" id="signinEmail" placeholder="Email" required />
+        <input type="password" id="signinPassword" placeholder="Password" required />
+        <p id="result"></p>
+        <div class="toggle-buttons">
+          <button type="button" onclick="showForm('signup')">Sign Up</button>
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      localStorage.setItem('loggedIn', 'true');
+      window.location.href = 'wetherapp2.html'; // 👈 Осы жер ауыстырады
+    });
+  </script>
+
+  <script src="wetherapp.js"></script>
+</body>
+</html>

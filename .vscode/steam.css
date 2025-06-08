@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #1b1f23;
+  color: #fff;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: #0e1013;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.sidebar a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #00aaff;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.banner {
+  display: flex;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.banner img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.banner-info {
+  max-width: 400px;
+}
+
+.banner-info h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.banner-info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.banner-info button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.offers {
+  display: flex;
+  gap: 10px;
+}
+
+.offers img {
+  width: 180px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.offers img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form input, form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  flex: 1;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #00aaff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}

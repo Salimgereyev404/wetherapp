@@ -1,0 +1,59 @@
+@ -0,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ауа райы қолданбасы</title>
+  <link rel="stylesheet" href="wetherapp2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <select id="languageSelector">
+  <option value="kz">Қазақша</option>
+  <option value="ru">Русский</option>
+  <option value="en">English</option>
+  </select>
+
+  <div class="app">
+    <div class="sidebar">
+      <input type="text" id="cities" placeholder="Қаланы енгізіңіз...">
+      <button id="find">Іздеу</button>
+
+      <div class="weather-info" id="container" style="display: none;">
+        <img id="img" src="" alt="">
+        <h2 id="temp"></h2>
+        <p class="desc" id="cloud"></p>
+        <p class="city" id="name"></p>
+        <p class="zhanauaqyt" id="jana"></p>
+        <img src="" id="img1" alt="">
+          <iframe id="map" width="600" height="400" style="border:0; margin-top: 20px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="topnav">
+       <a href="#today" class="active" onclick="showSection('today')">Today</a>
+       <a href="#week" onclick="showSection('week')">Week</a>
+      </div>
+
+      <div class="highlights">
+        <div class="card">
+          <h4 id="windLabel">Жел</h4>
+          <p id="kph">--</p>
+        </div>
+        <div class="card">
+          <h4 id="humidityLabel">Ылғалдылық</h4>
+          <p id="humidity">--</p>
+        </div>
+        <div class="card">
+          <h4 id="cloudLabel">Бұлттылық</h4>
+          <p id="cloudPercent">--</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="wetherapp2.js"></script>
+</body>
+</html>

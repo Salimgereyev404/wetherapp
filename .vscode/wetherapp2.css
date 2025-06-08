@@ -1,0 +1,137 @@
+@ -0,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: gray;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Сол жақ панель */
+.sidebar {
+  width: 30%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.weather-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.weather-info img {
+  width: 100px;
+  animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
+
+.desc {
+  font-size: 18px;
+  color: gray;
+}
+
+.city {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Оң жақ негізгі бөлік */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.topnav a.active,
+.topnav a:hover {
+  background-color: white;
+}
+
+.highlights {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  width: 200px;
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#map {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+

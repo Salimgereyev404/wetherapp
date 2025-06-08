@@ -1,0 +1,20 @@
+.container {
+  margin: 0 auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+ body {
+    background-color: rgb(2, 2, 162);
+    color: white;
+ }
+
+img{
+  animation: an 2s infinite alternate;
+}
+@keyframes an {
+  0% {transform: transLateY(-10px);}
+  100% {transform: transLateY(10px);}
+}

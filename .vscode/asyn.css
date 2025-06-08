@@ -1,0 +1,70 @@
+body{
+    background-color: white;
+    color: white;
+    background-image: url('https://i.pinimg.com/originals/f5/76/99/f576997a3054b80287eeded9664a1384.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+button {
+    background-color: rgb(2, 129, 2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.num1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.num2{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.num3{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.num4{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.span {
+    font-size: 48px;
+    
+}
+.pos{
+    
+    text-align: center;
+}

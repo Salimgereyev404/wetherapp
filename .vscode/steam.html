@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steam UI Clone</title>
+  <link rel="stylesheet" href="steam.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h1>🌀 STEAM</h1>
+    <nav>
+      <a href="#">Game store</a>
+      <a href="#">Library</a>
+      <a href="#">Community</a>
+      <a href="#">Friends</a>
+      <a href="#">Settings</a>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <input type="text" placeholder="Search orders" />
+      <div class="profile">Jenny Wilson</div>
+    </div>
+
+    <div class="banner">
+      <img src="https://i.imgur.com/EYVJ6qP.jpg" alt="Stray Game" />
+      <div class="banner-info">
+        <h2>Stray</h2>
+        <p>Lost, alone and separated from family, a stray cat must untangle an ancient mystery...</p>
+        <button>$16.99 USD — Available now</button>
+      </div>
+    </div>
+
+    <h3>Special offers</h3>
+    <div class="offers">
+      <img src="https://i.imgur.com/dFQ3uT5.jpg" alt="Hogwarts Legacy" />
+      <img src="https://i.imgur.com/5H7Yk8j.jpg" alt="Call of Duty" />
+      <img src="https://i.imgur.com/7dJfhbT.jpg" alt="FIFA 23" />
+      <img src="https://i.imgur.com/8Ln7jvn.jpg" alt="Mass Effect" />
+    </div>
+
+    <h3>Add New Game</h3>
+    <form id="gameForm">
+      <input type="text" name="gameName" placeholder="Game Name" required />
+      <input type="number" name="price" placeholder="Price (USD)" required />
+      <select name="category" required>
+        <option value="">Select Category</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Sports">Sports</option>
+      </select>
+      <button type="submit">Add Game</button>
+    </form>
+  </div>
+
+  <script src="steam.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    background-color: orange;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Sofia", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#ai {
+    font-weight: bold;
+}
+
+.tapsyrma {
+    margin-right: 18px;
+    padding-left: 18px;
+    border: 5px solid black;
+}
+
+#ai1 {
+    color: blue;
+}
