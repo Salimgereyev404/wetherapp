@@ -41,3 +41,16 @@ document.getElementById('signinForm').addEventListener('submit', function(e) {
     alert("Қате email немесе пароль!");
   }
 });
+// form submit кезінде
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+
+const user = {
+  email: email,
+  password: password
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+window.location.href = "wetherapp2.html";
+// Тіркелгенде немесе кіргенде қолданушыны сақтау
+localStorage.setItem("currentUser", JSON.stringify({ username: username }));

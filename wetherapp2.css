@@ -1,5 +1,4 @@
-
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,6 +8,11 @@
 body {
   background-color: white;
   color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  
 }
 
 .app {
@@ -19,12 +23,14 @@ body {
 /* Сол жақ панель */
 .sidebar {
   width: 30%;
-  background-color: white;
   padding: 30px;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0 10px rgba(241, 240, 240, 0.922);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 0.5px solid rgb(90, 87, 87);
+  color: white;
+  
 }
 
 input {
@@ -56,13 +62,13 @@ button {
 }
 
 @keyframes float {
-  0% { transform: translateY(-10px); }
-  100% { transform: translateY(10px); }
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
 }
 
 .desc {
   font-size: 18px;
-  color: gray;
+  color: white;
 }
 
 .city {
@@ -133,5 +139,57 @@ button {
   display: block;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+.appaq{
+  color: white
+}
+.appaq2{
+  color: white;
+}
+.appaq3{
+  color: white;
+}
+#weekForecast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#weekForecast .card {
+  width: 160px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    body {
+      flex-direction: column;
+    }
+  
+    .content {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .navbar, .footer {
+      text-align: center;
+    }
+  
+  }
+  .main {
+    padding: 10px;
+  }
+  .highlights {
+    justify-content: center;
+  }
+}
 
 
+  
